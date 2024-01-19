@@ -14,7 +14,7 @@ $mysqli = mysqli_connect("sql3.freemysqlhosting.net", "sql3678207", "cHzzxTKUGz"
 //create and issue the query
 $targetemail = filter_input(INPUT_POST, 'email');
 $targetpasswd = filter_input(INPUT_POST, 'password');
-$sql = "SELECT email, password FROM auth_users WHERE email = '".$targetemail.
+$sql = "SELECT email, password FROM users WHERE email = '".$targetemail.
         "' AND password = SHA1('".$targetpasswd."')";
 
 $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
