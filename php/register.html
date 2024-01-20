@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link ref="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="../css/style.css">
 	</head>
 <body>
 	<form action="register.php" method="POST">
@@ -12,13 +12,15 @@
 		<input type="text" id="last_name" name="last_name" required><br><br>
 
 		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required><br><br>
+		<input type="text" id="email" name="email" required><br><br>
 
 		<label for="password">Password:</label>
 		<input type="password" id="password" name="password" required><br><br>
 
 		<label for="dob">Date of Birth:</label>
 		<input type="date" id="dob" name="dob" required><br><br>
+
+		<input type="submit" id="submit" name="submit" value="Submit"><br><br>
 		
 	</form>
 	<body> 
