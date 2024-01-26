@@ -25,11 +25,11 @@ $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
 
 if ($result) {
     $_SESSION['account_created_message'] = "Account created successfully. You can now log in.";
-    header("Location: login.php");
+    header("Location: login.html");
     exit;
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($mysqli);
-    header("Location: register.php");
+    header("Location: register.html");
     exit;
 }
 ?>
