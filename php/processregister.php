@@ -28,7 +28,7 @@ if ($result) {
     header("Location: login.html");
     exit;
 } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($mysqli);
+    $_SESSION['error_message'] = "Error creating account. Please try again.";
     header("Location: register.html");
     exit;
 }
