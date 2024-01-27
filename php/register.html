@@ -3,22 +3,23 @@
 	<head>
 		<link rel="stylesheet" href="../css/style.css">
 	</head>
+	<nav>
+		<h1>Sign Up</h1>
+		<img src="../logos/banner1.jpg" alt="logo" class="logo">
+	</nav>
 <body>
 	<form action="processregister.php" method="POST">
-		<label for="first_name">First Name:</label>
-		<input type="text" id="first_name" name="first_name" required><br><br>
 
-		<label for="last_name">Last Name:</label>
-		<input type="text" id="last_name" name="last_name" required><br><br>
+		<input type="text" id="first_name" name="first_name" placeholder="First Name" required><br><br>
+		
+		<input type="text" id="last_name" name="last_name" placeholder="Last Name" required><br><br>
 
-		<label for="email">Email:</label>
-		<input type="text" id="email" name="email" required><br><br>
+		<input type="text" id="email" name="email" placeholder="Email"><br><br>
 
-		<label for="password">Password:</label>
-		<input type="password" id="password" name="password" required><br><br>
+		<input type="password" id="password" name="password" placeholder="Password" required><br><br>
 
-		<label for="dob">Date of Birth:</label>
-		<input type="date" id="dob" name="dob" required><br><br>
+		<input type="password" id="password" name="password" placeholder="Confirm Password" required><br><br>
+		<label for="dob">Date of Birth:</label> <input type="date" id="dob" name="dob" required><br><br>
 
 		<input type="submit" id="submit" name="submit" value="Submit"><br><br>
 		
