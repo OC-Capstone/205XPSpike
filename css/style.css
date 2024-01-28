@@ -48,7 +48,7 @@ input[type="number"]{
     color: #110808;
 }
 
-input[type="submit"] {
+input[type="submit"], button {
     background-color: #4CAF50;
     border: none;
     color: white;
