@@ -1,4 +1,4 @@
 
-    function redirectPage(pageURL) {
-        window.location.href = pageURL;
-    }
+function redirectPage(url) {
+    window.location.href = url;
+}

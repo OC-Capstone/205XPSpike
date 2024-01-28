@@ -5,8 +5,6 @@
     <script src="nutrition_form.js"></script>
     <style>
 
-
-
         body {
 
             text-align: center;
@@ -24,31 +22,17 @@
             margin-top: 100px;
             margin-bottom: 20px;
         }
-        a {
-            background-color: #4CAF50;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            width: 33%;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 2em;
-        }
 
-         form {
+        form {
     
-            margin: 0 auto;
-            width: 300px;
-            padding: 50px;
-            background-color: #FFFFFF;
+    margin: 0 auto;
+    width: 300px;
+    padding: 50px;
+    background-color: #FFFFFF;
 
-        }
+    }
 
-        input[type="text"] {
+    input[type="text"] {
         margin-bottom: 15px; 
         width: 100%;
         padding: .5em;
@@ -58,20 +42,59 @@
         color: #333;
     }
 
-    </style>
+       
+ input[type="Submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2em;
+}
+
+    
+</style>
 </head>
+
 <body>
     
 
 <h1>Lunch tracker</h1>
-<form>
-  
-  <input type="text" name="Meal_name" placeholder="Meal name">
-  <input type="text" name="Calorie_count" placeholder="Calories">
-  <input type="text" name="Protien_count" placeholder="Protein">
-  <input type="text" name="Carb_count" placeholder="Carbohydrates">
-  <input type="text" name="Fats_count" placeholder="Total fats">
+<form action="processSubmit.php" method="POST">
+
+  <input type="text" id="Meal_name" name="Meal_name" placeholder="Meal name"
+    required pattern="[A-Za-z\s]+"
+      title="Only letters and spaces are allowed."
+>
+
+<input type="text" id="Calorie_count" name="Calorie_count" placeholder="Calories" 
+required pattern="[0-9]+"
+title="Only numbers are allowed."
+>
+
+  <input type="text" id="Protien_count" name="Protien_count" placeholder="Protein" 
+  required pattern="[0-9]+"
+  title="Only numbers are allowed."
+>
+
+  <input type="text" id="Carb_count" name="Carb_count" placeholder="Carbohydrates" 
+  required pattern="[0-9]+"
+  title="Only numbers are allowed."
+>
+
+  <input type="text" id="Fats_count" name="Fats_count" placeholder="Total fats" 
+  required pattern="[0-9]+"
+  title="Only numbers are allowed."
+>
+
+  <input type="submit" value="Submit">
 
 </form>
-<a href="nutrition_input.html">Submit</a>
+
 </body>

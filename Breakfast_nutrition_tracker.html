@@ -58,14 +58,20 @@
     border-radius: 2em;
 }
 
-    
+.checkmark {
+    display: none; /* Initially hide the checkmark */
+    width: 20px; /* Adjust the size as needed */
+    height: auto;
+    vertical-align: middle; /* Align with text */
+}
+
 </style>
 </head>
 
 <body>
     
 
-<h1>Snack tracker</h1>
+<h1>Breakfast tracker</h1>
 <form action="processSubmit.php" method="POST">
 
   <input type="text" id="Meal_name" name="Meal_name" placeholder="Meal name"
@@ -78,21 +84,20 @@ required pattern="[0-9]+"
 title="Only numbers are allowed."
 >
 
-  <input type="text" id="Protien_count" name="Protien_count" placeholder="Protein" 
+  <input type="text" id="Protien_count" name="Protien_count" placeholder="Protein (g)" 
   required pattern="[0-9]+"
   title="Only numbers are allowed."
 >
 
-  <input type="text" id="Carb_count" name="Carb_count" placeholder="Carbohydrates" 
+  <input type="text" id="Carb_count" name="Carb_count" placeholder="Carbohydrates (g)" 
   required pattern="[0-9]+"
   title="Only numbers are allowed."
 >
 
-  <input type="text" id="Fats_count" name="Fats_count" placeholder="Total fats" 
+  <input type="text" id="Fats_count" name="Fats_count" placeholder="Total fats (g)" 
   required pattern="[0-9]+"
   title="Only numbers are allowed."
 >
-
   <input type="submit" value="Submit">
 
 </form>
