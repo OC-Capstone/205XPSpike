@@ -3,10 +3,10 @@ session_start();
 
 //check for required fields from the form
 if ((!filter_input(INPUT_POST, 'Meal_name'))
-        || (!filter_input(INPUT_POST, 'Calorie_count'))
-            || (!filter_input(INPUT_POST, 'Protien_count'))
-                || (!filter_input(INPUT_POST, 'Carb_count'))
-                    || (!filter_input(INPUT_POST, 'Fats_count'))) {
+    || (!filter_input(INPUT_POST, 'Calorie_count'))
+    || (!filter_input(INPUT_POST, 'Protein_count'))
+    || (!filter_input(INPUT_POST, 'Carb_count'))
+    || (!filter_input(INPUT_POST, 'Fats_count'))) {
 
 //this is slightly redundant but the regular expression pattern set in each html file overwrites the ability for a user to bypass the conditions. 
 	header("Location: nutrition_input.html"); 
